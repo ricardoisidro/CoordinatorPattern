@@ -12,6 +12,7 @@
 		8C2CBFF82230E13700E264BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C2CBFF62230E13700E264BB /* Main.storyboard */; };
 		8C2CBFFA2230E13900E264BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C2CBFF92230E13900E264BB /* Assets.xcassets */; };
 		8C2CBFFD2230E13900E264BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C2CBFFB2230E13900E264BB /* LaunchScreen.storyboard */; };
+		8C2CC0052230E84A00E264BB /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2CC0042230E84A00E264BB /* Coordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		8C2CBFF92230E13900E264BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8C2CBFFC2230E13900E264BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8C2CBFFE2230E13900E264BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C2CC0042230E84A00E264BB /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				8C2CBFF22230E13600E264BB /* AppDelegate.swift */,
 				8C2CBFF42230E13600E264BB /* ViewController.swift */,
+				8C2CC0042230E84A00E264BB /* Coordinator.swift */,
 				8C2CBFF62230E13700E264BB /* Main.storyboard */,
 				8C2CBFF92230E13900E264BB /* Assets.xcassets */,
 				8C2CBFFB2230E13900E264BB /* LaunchScreen.storyboard */,
@@ -137,6 +140,7 @@
 			files = (
 				8C2CBFF52230E13600E264BB /* ViewController.swift in Sources */,
 				8C2CBFF32230E13600E264BB /* AppDelegate.swift in Sources */,
+				8C2CC0052230E84A00E264BB /* Coordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +289,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K58JH44H3K;
 				INFOPLIST_FILE = CoordinatorPattern/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -303,6 +308,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K58JH44H3K;
 				INFOPLIST_FILE = CoordinatorPattern/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
