@@ -8,13 +8,19 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class ViewController: UIViewController, Storyboarded {
+    weak var coordinator: MainCoordinator?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        view.backgroundColor = .green
     }
-
-
+    
+    @IBAction func btnBuy(_ sender: UIButton) {
+        coordinator?.buy()
+    }
+    
+    @IBAction func btnCreate(_ sender: UIButton) {
+        coordinator?.create()
+    }
 }
-
