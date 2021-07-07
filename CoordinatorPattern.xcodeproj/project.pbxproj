@@ -7,15 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8C1CDAB0223A19E400669C34 /* BuyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1CDAAF223A19E400669C34 /* BuyViewController.swift */; };
+		8C1CDAB2223A1ECD00669C34 /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1CDAB1223A1ECD00669C34 /* CreateAccountViewController.swift */; };
 		8C2CBFF32230E13600E264BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2CBFF22230E13600E264BB /* AppDelegate.swift */; };
 		8C2CBFF52230E13600E264BB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2CBFF42230E13600E264BB /* ViewController.swift */; };
 		8C2CBFF82230E13700E264BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C2CBFF62230E13700E264BB /* Main.storyboard */; };
 		8C2CBFFA2230E13900E264BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C2CBFF92230E13900E264BB /* Assets.xcassets */; };
 		8C2CBFFD2230E13900E264BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C2CBFFB2230E13900E264BB /* LaunchScreen.storyboard */; };
 		8C2CC0052230E84A00E264BB /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2CC0042230E84A00E264BB /* Coordinator.swift */; };
+		8CF75C792238C149000FA42F /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF75C782238C149000FA42F /* MainCoordinator.swift */; };
+		8CF75C7B2238C206000FA42F /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF75C7A2238C206000FA42F /* Storyboarded.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8C1CDAAF223A19E400669C34 /* BuyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyViewController.swift; sourceTree = "<group>"; };
+		8C1CDAB1223A1ECD00669C34 /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
 		8C2CBFEF2230E13600E264BB /* CoordinatorPattern.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoordinatorPattern.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C2CBFF22230E13600E264BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8C2CBFF42230E13600E264BB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +30,8 @@
 		8C2CBFFC2230E13900E264BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8C2CBFFE2230E13900E264BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8C2CC0042230E84A00E264BB /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		8CF75C782238C149000FA42F /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		8CF75C7A2238C206000FA42F /* Storyboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +45,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8C1CDAAE223A038900669C34 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				8CF75C782238C149000FA42F /* MainCoordinator.swift */,
+				8C2CC0042230E84A00E264BB /* Coordinator.swift */,
+				8CF75C7A2238C206000FA42F /* Storyboarded.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		8C2CBFE62230E13600E264BB = {
 			isa = PBXGroup;
 			children = (
@@ -56,13 +74,15 @@
 		8C2CBFF12230E13600E264BB /* CoordinatorPattern */ = {
 			isa = PBXGroup;
 			children = (
+				8C1CDAAE223A038900669C34 /* Protocols */,
 				8C2CBFF22230E13600E264BB /* AppDelegate.swift */,
 				8C2CBFF42230E13600E264BB /* ViewController.swift */,
-				8C2CC0042230E84A00E264BB /* Coordinator.swift */,
 				8C2CBFF62230E13700E264BB /* Main.storyboard */,
 				8C2CBFF92230E13900E264BB /* Assets.xcassets */,
 				8C2CBFFB2230E13900E264BB /* LaunchScreen.storyboard */,
 				8C2CBFFE2230E13900E264BB /* Info.plist */,
+				8C1CDAAF223A19E400669C34 /* BuyViewController.swift */,
+				8C1CDAB1223A1ECD00669C34 /* CreateAccountViewController.swift */,
 			);
 			path = CoordinatorPattern;
 			sourceTree = "<group>";
@@ -77,6 +97,7 @@
 				8C2CBFEB2230E13600E264BB /* Sources */,
 				8C2CBFEC2230E13600E264BB /* Frameworks */,
 				8C2CBFED2230E13600E264BB /* Resources */,
+				8C1CDAAD223A013200669C34 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -133,14 +154,38 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		8C1CDAAD223A013200669C34 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8C2CBFEB2230E13600E264BB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C1CDAB2223A1ECD00669C34 /* CreateAccountViewController.swift in Sources */,
 				8C2CBFF52230E13600E264BB /* ViewController.swift in Sources */,
+				8CF75C792238C149000FA42F /* MainCoordinator.swift in Sources */,
+				8CF75C7B2238C206000FA42F /* Storyboarded.swift in Sources */,
 				8C2CBFF32230E13600E264BB /* AppDelegate.swift in Sources */,
 				8C2CC0052230E84A00E264BB /* Coordinator.swift in Sources */,
+				8C1CDAB0223A19E400669C34 /* BuyViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
